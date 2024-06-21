@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class ComparisonCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt(); 
+        
+        while (t--> 0) {
+            int A = scanner.nextInt();
+            String operator = scanner.next();
+            int B = scanner.nextInt();
+            boolean isRight = false;
+            switch (operator) {
+                case "=":
+                    isRight = (A == B);
+                    break;
+                case "<":
+                    isRight = (A < B);
+                    break;
+                case ">":
+                    isRight = (A > B);
+                    break;
+                default:
+                    break;
+            }
+            
+            if (isRight) {
+                System.out.println("Right");
+            } else {
+                System.out.println("Wrong");
+            }
+        }
+        
+        scanner.close();
+    }
+}
