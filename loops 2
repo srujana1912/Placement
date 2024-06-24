@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int fact,sum=0;
+        while(n!=0)
+        {
+            fact=1;
+            int r=n%10;
+            while(r>=1)
+            {
+                fact=fact*r;
+                r=r-1;
+            }
+            sum=sum+fact;
+            n=n/10;
+            }
+        System.out.println(sum);
+        }
+}
