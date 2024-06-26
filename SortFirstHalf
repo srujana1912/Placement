@@ -1,0 +1,28 @@
+import java.util.*;
+public class SortFirstHalf 
+{
+    public static void sortFirstHalf(int[] arr)
+ {
+  int n = arr.length;
+  int mid = n / 2;
+  if (n % 2 == 1)
+
+ { 
+   mid++;
+  }  
+  Arrays.sort(arr, 0, mid); 
+  }
+  public static void main(String[] args) 
+{
+ int[] arr1 = {3, 1, 4, 1, 5, 9};
+  int[] arr2 = {8, 9, 7, 6, 5, 4, 3};
+  System.out.println("Before sorting first half:");
+  System.out.println(Arrays.toString(arr1));
+  System.out.println(Arrays.toString(arr2));
+  sortFirstHalf(arr1);
+  sortFirstHalf(arr2);
+  System.out.println("\nAfter sorting first half:");
+  System.out.println(Arrays.toString(arr1));
+  System.out.println(Arrays.toString(arr2));
+    }
+}
