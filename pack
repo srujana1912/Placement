@@ -1,0 +1,17 @@
+package pack1;
+class Third
+{
+void show3()
+{
+First f=new First();
+System.out.println("a="+f.a);
+System.out.println("b="+f.b);
+System.out.println("c="+f.c);
+System.out.println("d="+f.d);
+}
+public static void main(String []args)
+{
+Third t1=new Third();
+t1.show3();
+}
+}
